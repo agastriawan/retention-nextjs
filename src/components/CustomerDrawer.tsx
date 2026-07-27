@@ -16,7 +16,7 @@ export const CustomerDrawer: React.FC<CustomerDrawerProps> = ({
   onOpenAuditTrail,
   onExecuteAction,
 }) => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [actionExecuted, setActionExecuted] = useState(false);
 
   if (!customer) return null;
